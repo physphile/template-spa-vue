@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import postcssPresetEnv from 'postcss-preset-env';
+import vuetify from 'vite-plugin-vuetify';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [vue()],
+	plugins: [vue(), vuetify()],
 	css: {
 		postcss: {
 			plugins: [
