@@ -1,8 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BPANavigation from './components/BPANavigation.vue';
+</script>
 
 <template>
-	<v-app>
-		<v-app-bar title="physphile"></v-app-bar>
+	<BPANavigation v-if="$route.path !== '/login'" />
+	<div class="container" :class="{ margin: $route.path !== '/login' }">
 		<RouterView />
-	</v-app>
+	</div>
 </template>
+
+<style scoped>
+.container {
+	height: 100%;
+}
+
+.margin {
+	padding-left: var(--navigation-width);
+}
+</style>

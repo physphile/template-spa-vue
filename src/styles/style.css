@@ -1,0 +1,39 @@
+* {
+	scrollbar-color: #343a46 #252b36;
+	scrollbar-width: 8px;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+		position: absolute;
+		left: 0;
+	}
+
+	&::-webkit-scrollbar-track {
+		box-shadow: inset 8px 8px 0 0 #252b36;
+		border-radius: 8px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		box-shadow: inset 8px 8px 0 0 #343a46;
+		border-radius: 8px;
+	}
+}
+
+html,
+body {
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.text-primary {
+	color: var(--color-primary);
+}
+
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}

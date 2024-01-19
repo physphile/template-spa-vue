@@ -1,8 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { BPALoader } from '@bpa-dev/uikit';
+</script>
 
 <template>
-	<v-navigation-drawer></v-navigation-drawer>
-	<v-main>
-		<h1 class="text-h1">Hello, <a href="https://t.me/physphile">@physphile</a>!</h1>
-	</v-main>
+	<BPALoader width="128" height="128" />
+	<BPALoader width="256" height="256" />
 </template>
